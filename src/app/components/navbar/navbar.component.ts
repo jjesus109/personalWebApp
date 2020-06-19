@@ -7,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  public navClick:boolean=false;
   constructor() { }
 
   ngOnInit(): void {
 
+  }
+  tocarNavbar(){
+    this.navClick = !this.navClick;
   }
 
 }

@@ -2,44 +2,70 @@
     <div class="container">
         <div class="tile is-ancestor">
             <div class="tile is-5 is-vertical is-parent">
-            <div class="tile is-child box">
-                <div class="columns"> 
-                    <div class="column"> 
-                        <figure class="image is-4by3">
-                            <img src="assets/img/how-could-I-do-it.jpg" alt="how-could-I-do-it">
-                          </figure>
-                    </div>
-                    <div class="column"> 
-                        <p class="title">How could I do it?</p>
-                    <p>With a few things in mind, a power determination and consistency, we could create every single word that we speak. If we think </p>
-                    </div>
+                <div class="tile is-child box">
                     
-                </div>
-            </div>
-            <div class="tile is-child box">
-                <div class="columns"> 
+                    <div class="columns" [routerLink]="['/about-me']"> 
+                        <div class="column center-text-vertical"> 
+                            <figure class="image is-4by3">
+                                <img src="assets/img/how-could-I-do-it.jpg" alt="how-could-I-do-it">
+                            </figure>
+                            <div class="container has-text-centered">
+                                
+                                <br>
+                                <button class="button is-link is-inverted">Know more</button>
+                            </div>
+                        </div>
+                        <div class="column center-text-vertical"> 
+                            
+                            <p class="title has-text-centered">How could I do it?</p>
+                            <p class="has-text-centered">
+                                With a few things in mind, a powerful determination and consistency, 
+                                we could create every single word that we speak. </p>
+                                
+                        </div>
+                    </div>
 
-                    <div class="column"> 
-                        <p class="title">Who I am</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                    </div>
-                    <div class="column"> 
-                        
-                        <figure class="image is-4by3">
-                            <img src="assets/img/about-me.jpg" alt="Placeholder image">
-                          </figure>
-                    </div>
+                </div>
+                <div class="tile is-child box">
+                    
+                        <div class="columns is-multiline" [routerLink]="['/about-me']"> 
+                            <div class="column center-text-vertical"> 
+                                <p class="title has-text-centered">Who I am</p>
+                                <p class="has-text-centered">
+                                    Mechatronic, developer, curious about improving 
+                                    the way things could (or not) happen.</p>
+                                    
+                            </div>
+                            <div class="column center-text-vertical"> 
+                                
+                                <figure class="image is-4by3">
+                                    <img src="assets/img/about-me.jpg" alt="Placeholder image">
+                                </figure>
+                                <div class="container has-text-centered">
+                                
+                                    <br>
+                                    <button class="button is-info is-inverted">Know more</button>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="container has-text-centered">
+                            
+                        </div>
                     
                 </div>
-            </div>
             </div>
             <div class="tile is-parent">
-            <div class="tile is-child box card-back">
-                <p class="title">See it !</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
-                <p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.</p>
-                <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta. Aliquam ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
-            </div>
+                <div class="tile is-child box card-back">
+                    <div class="columns is-multiline" >
+                        <div class="column center-text-vertical">
+                            <p class="title has-text-centered has-text-white-ter ">See it !</p>
+                            <p class="has-text-centered ">An image, video or feeling could explain more than a bunch of words. Let's explore all the fields I'm related to and a bit of them, <i>Machine Learning</i>, <i>Computer Vision</i> and all the stuff in <i>Cloud</i>.</p>
+                            <br>
+                            <br>
+                                <button class="button is-info is-light" [routerLink]="['/see-it']">Explore more</button>
+                        </div>        
+                    </div>
+                </div>
             </div>
         </div>
     </div>
